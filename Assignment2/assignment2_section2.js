@@ -1,4 +1,5 @@
 // Scoping & Closures
+
 function funcCounter() {
     let count = 0;  // Create a local variable
     
