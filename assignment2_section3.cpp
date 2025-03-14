@@ -1,4 +1,5 @@
 // Program to multiply numbers
+// Part 2: Memory Management code in Java language
 import java.util.ArrayList;
 
 public class mulitplyCalc {
