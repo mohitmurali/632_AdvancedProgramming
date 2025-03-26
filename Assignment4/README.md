@@ -22,11 +22,21 @@ The application is implemented in both JavaScript (Node.js) and Python, offering
 
 ## 🚀 Installation & Setup  
 
-### JavaScript (Node.js)  
-1. Clone this repository:  
+### JavaScript (Node.js)   
    ```bash
    git clone https://github.com/your-username/employee-scheduling.git
    cd employee-scheduling
    npm install
    node employee_scheduler.js
    ```
+### Python 
+```bash
+   sudo apt install python3
+   git clone https://github.com/your-username/employee-scheduling.git
+   cd employee-scheduling
+   python3 employee_scheduler.js
+```
+📚 Additional Information
+JavaScript Version: Built with Node.js, using the readline module for command-line interaction.
+Python Version: Uses native input and print functions for a simple CLI experience.
+Scheduling Logic: Assigns shifts based on preferences and availability, ensuring fairness and coverage.
