@@ -25,10 +25,9 @@ The application is implemented in both JavaScript (Node.js) and Python, offering
 ### JavaScript (Node.js)   
    ```bash
    git clone https://github.com/mohitmurali/632_AdvancedProgramming.git
-   cd 632_AdvancedProgramming/Assignment4/JavaScript
-   npm install
-   node employee_scheduler.js
+   Navigate to the folder and open the HTML file
    ```
+
 ### Python 
 ```bash
    sudo apt install python3
