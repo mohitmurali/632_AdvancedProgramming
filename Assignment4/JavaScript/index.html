@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Scheduling</title>
+  <style>
+    /* Container styling */
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Headings */
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Grey section */
+    .grey-section {
+      background-color: #d3d3d3;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* Form styling */
+    #employee-form {
+      margin-bottom: 20px;
+    }
+    #employee-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Button styling */
+    button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Action buttons container */
+    #action-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MSCS 632 - Advanced Programming Languages</h1>
+    <h2>Assignment 4: Implementing Control Structures</h2>
+    <div class="grey-section">Done by Mohit Gokul Murali</div>
+
+    <!-- Form to add employees -->
+    <div id="employee-form">
+      <h2>Add Employee</h2>
+      <label>Name: <input type="text" id="name"></label>
+      <h3>Preferred Shift (Applies to All Days)</h3>
+      <label><input type="radio" name="shift" value="morning"> Morning</label>
+      <label><input type="radio" name="shift" value="afternoon"> Afternoon</label>
+      <label><input type="radio" name="shift" value="evening"> Evening</label>
+      <button id="add-employee">Add Employee</button>
+    </div>
+
+    <!-- Display of added employees and minimum needed -->
+    <div id="employees-list">
+      <h2>Employees Added: <span id="employee-count">0</span></h2>
+      <p id="min-needed">Need 9 more employees</p>
+      <table id="employees-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Preferred Shift</th>
+          </tr>
+        </thead>
+        <tbody id="employees"></tbody>
+      </table>
+    </div>
+
+    <!-- Action buttons -->
+    <div id="action-buttons">
+      <button id="generate-schedule" disabled>Generate Schedule</button>
+      <button id="clear-schedule">Clear Schedule</button>
+      <button id="create-another-schedule" disabled>Create another Schedule</button>
+    </div>
+    <div id="schedule-output"></div>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="employee_scheduler.js"></script>
+</body>
+</html>
